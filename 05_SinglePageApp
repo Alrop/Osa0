@@ -1,0 +1,22 @@
+```mermaid
+sequenceDiagram;
+
+participant Selain
+participant Palvelin
+
+
+Selain->>+Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/spa
+Palvelin-->>-Selain: 304 Not Modified(HTML)
+
+
+Selain->>+Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/data.json
+Palvelin-->>-Selain: 304 Not Modified(json)
+
+
+Selain->>+Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/spa.js
+Palvelin-->>-Selain: 304 Not Modified(js)
+
+
+Selain->>+Palvelin: GET https://studies.cs.helsinki.fi/exampleapp/main.css
+Palvelin-->>-Selain: 304 Not Modified(css)
+```

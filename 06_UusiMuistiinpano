@@ -1,0 +1,11 @@
+```mermaid
+sequenceDiagram;
+
+participant Selain
+participant Palvelin
+
+
+Selain->>+Palvelin: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
+Palvelin-->>-Selain: 201 Created
+
+```
